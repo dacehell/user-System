@@ -3,12 +3,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { usersSelector } from "../../store/users/selector";
 import { fetchUsersStartThunk } from "../../store/users/thunks";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
-const UserContainer = () => {
+const UserList = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchUsersStartThunk());
   }, [dispatch]);
+
   const users = useSelector(usersSelector);
   return (
     <div>
@@ -60,6 +62,12 @@ const UserContainer = () => {
                         {user.website}
                       </li>
                     </ul>
+                    <Link
+                      className="btn btn-danger"
+                      to={`/users/delete/${user.id}`}
+                    >
+                      Delete
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -69,4 +77,4 @@ const UserContainer = () => {
     </div>
   );
 };
-export default UserContainer;
+export default UserList;
