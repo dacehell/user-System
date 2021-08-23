@@ -35,64 +35,15 @@ const Menu = () => {
                 Home
               </NavLink>
             </li>
+
             <li className="nav-item">
               <NavLink
                 exact
                 activeClassName="my-active"
                 className="navbar-brand"
-                to="/list"
-              >
-                List
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                activeClassName="my-active"
-                className="navbar-brand"
-                to="/detail"
-              >
-                Detail
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                activeClassName="my-active"
-                className="navbar-brand"
-                to="/create"
+                to="/user/create"
               >
                 Create
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                activeClassName="my-active"
-                className="navbar-brand"
-                to="/privateEdit"
-              >
-                Edit
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                activeClassName="my-active"
-                className="navbar-brand"
-                to="/privateRemove"
-              >
-                Remove
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                activeClassName="my-active"
-                className="navbar-brand"
-                to="/login"
-              >
-                Login
               </NavLink>
             </li>
           </ul>

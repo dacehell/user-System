@@ -14,6 +14,8 @@ import React from "react";
 import UsersList from "./containers/users/UsersList";
 import UserDelete from "./containers/user-delete/UserDelete";
 import Menu from "./components/menu/Menu";
+import UserCreate from "./containers/usercreate/UserCreate";
+import UserUpdate from "./containers/userupdate/UserUpdate";
 
 library.add(fab, fas);
 
@@ -26,15 +28,19 @@ function App() {
 
           <Switch>
             {/* <Route exact path="/">
-            
-                <Home />
-              
+              <Home />
             </Route> */}
             <Route exact path="/">
               <UsersList />
             </Route>
             <Route path="/users/delete/:id">
               <UserDelete />
+            </Route>
+            <Route path="/user/create" exact>
+              <UserCreate />
+            </Route>
+            <Route path="/user/update/:id" exact>
+              <UserUpdate />
             </Route>
           </Switch>
         </Router>
