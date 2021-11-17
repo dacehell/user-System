@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/containers/usercreate/usercreate.module.css"],"names":[],"mappings":"AAAA,4BACE,YAAa,CACb,iBAAkB,CAClB,sBACF,CACA,KACE,WACF","file":"main.5cc2f026.chunk.css","sourcesContent":[".centered {\r\n  display: flex;\r\n  text-align: center;\r\n  justify-content: center;\r\n}\r\nform {\r\n  width: 450px;\r\n}\r\n"]}
